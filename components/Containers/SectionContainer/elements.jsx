@@ -10,3 +10,4 @@ export const StyledSectionContainer = styled(({ topMargin = 0, bottomMargin = 0,
   margin-top: ${({ topMargin }) => topMargin}rem;
   margin-bottom: ${({ bottomMargin }) => bottomMargin}rem;
 `;
+

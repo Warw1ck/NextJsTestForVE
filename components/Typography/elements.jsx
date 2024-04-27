@@ -23,11 +23,26 @@ export const StyledSectionSubheading = styled(forwardRef((props, ref) => <h3 {..
   font-weight: 300;
 `;
 
-export const StyledSectionInnerHeading = styled(forwardRef((props, ref) => <h4 {...props} ref={ref} />))`
+export const StyledSectionHeadingCard = styled(forwardRef((props, ref) => <h3 {...props} ref={ref} />))`
   font-family: Poppins;
   font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 300;
+  font-weight: 600;
+  margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 0.8rem;
+
+  }
+`;
+
+export const StyledSectionInnerHeading = styled(forwardRef((props, ref) => <span {...props} ref={ref} />))`
+  font-family: Poppins;
+  font-size: 0.75rem;
+  // line-height: 1.5rem;
+  font-weight: 600;
+  @media (max-width: 1024px) {
+    font-size: 0.6rem;
+
+  }
 `;
 
 export const StyledSectionTinyHeading = styled(forwardRef((props, ref) => <h5 {...props} ref={ref} />))`
@@ -35,11 +50,17 @@ export const StyledSectionTinyHeading = styled(forwardRef((props, ref) => <h5 {.
   font-size: 0.75rem;
   line-height: 1.125rem;
   font-weight: 300;
+  
 `;
 
 export const StyledSectionParagraph = styled((props) => <p {...props} />)`
   font-family: Poppins;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 0.75rem;
+  // line-height: 1.5rem;
   font-weight: 400;
+  margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 0.6rem;
+
+  }
 `;
