@@ -9,46 +9,7 @@ const heroProps = {
   ctaText: "Start",
 };
 
-const mainProps = {
-  image: { src: "/img/video.png", alt: "" },
-  title: "Managed agency selection",
-  description: "Strengthen your onboarding process",
-  ctaText: "Start",
-  cards: [
-    {
-      title: "Brief",
-      description:
-        "Complete brief writing or simple guidance on what to include, we've got you covered.",
-      color: theme.grayF0,
-      leftSpace: "90%",
-      innerTitleStartIndex: 9,
-      innerTitleEndIndex: 41,
-      icon: {path: '/icons/face-crazy.svg', name: 'Crazy Emoji'},
 
-    },
-    {
-      title: "Search",
-      description:
-        "In-depth agency search covering; criteria matching, door knocking and due-dilligence vetting.",
-      color: theme.grayEA,
-      leftSpace: "95%",
-      innerTitleStartIndex: 32,
-      innerTitleEndIndex: 47,
-      icon: {path: '/icons/face-grin-stars-regular.svg', name: 'Stars Emoji'},
-    },
-
-    {
-      title: "Pitch",
-      description:
-        "Comprehensive pitch management, including comms, diary management and pitch hosting.",
-      color: theme.grayE2,
-      leftSpace: "100%",
-      innerTitleStartIndex: 14,
-      innerTitleEndIndex: 30,
-      icon: {path: '/icons/face-grin-tears-regular.svg', name: 'Tears Emoji'},
-    },
-  ],
-};
 
 export default function Home() {
   return (
@@ -62,9 +23,9 @@ export default function Home() {
         />
       </head>
       <div>
-        {/* <Hero {...heroProps} /> */}
+        <Hero {...heroProps} />
 
-        <Main {...mainProps} />
+        {/* <Main {...mainProps} /> */}
 
         {/** Other sections */}
       </div>
